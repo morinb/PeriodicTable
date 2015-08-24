@@ -1,0 +1,31 @@
+div.element {
+    display: block;
+    border: solid 1px black;
+    width: 5.5%;
+    height: 10%;
+    padding: 2px;
+    margin: 1px;
+}
+
+.gas {
+    border-color: #1b6d85;
+}
+
+.element span.name {
+    display: block;
+    clear: both;
+    text-align: center;
+    font-size: xx-small;
+    top: -8px;
+}
+
+.element span.atomic-number {
+    float: left;
+}
+
+.element span.symbol {
+    display: block;
+    clear: both;
+    text-align: center;
+    font-size: large;
+}

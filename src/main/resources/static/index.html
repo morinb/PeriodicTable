@@ -1,13 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="element">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!--<link rel="stylesheet" href="css/bootstrap.css">-->
+    <!--<link rel="stylesheet" href="css/bootstrap-theme.css">-->
+
+    <!--<script src="js/angular.js"></script>-->
+    <!--<script src="js/jquery.js"></script>-->
+    <!--<script src="js/bootstrap.js"></script>-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/element.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <script src="js/elements.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
+
+<div class="container" ng-controller="ElementController as elementCtrl">
+    <div ng-repeat="el in elementCtrl.pelements" class="element" ng-class="el.state">
+        <span class="atomic-number">{{el.atomic_number}}</span>
+        <span class="symbol">{{el.symbol}}</span>
+        <span class="name">{{el.name}}</span>
+    </div>
+
+</div>
 
 </body>
 </html>
